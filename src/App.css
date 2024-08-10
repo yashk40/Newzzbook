@@ -1,3 +1,35 @@
-body{
-background-color: #15141d;
+
+.Navupper{
+    height:9vh;
+ }
+ .country-dropdown {
+    margin: 20px;
+  }
+  
+  .country-dropdown label {
+    margin-right: 10px;
+  }
+  
+  .country-dropdown select {
+    padding: 5px;
+  }
+/* Styles for the container */
+.container1{
+   display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right:1%;
+   
 }
+
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+
+
