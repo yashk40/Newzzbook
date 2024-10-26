@@ -406,7 +406,7 @@ export default class Api extends Component {
       const result = await response.json();
       this.processArticles(result);
     } catch (primaryError) {
-      console.error(primaryError);
+      
       for (const fallback of fallbackUrls) {
         try {
           const fallbackResponse = await fetch(fallback.url, fallback.options);
@@ -417,7 +417,7 @@ export default class Api extends Component {
           this.processArticles(fallbackResult);
           return;
         } catch (fallbackError) {
-          console.error(fallbackError);
+          
           continue;
         }
       }
